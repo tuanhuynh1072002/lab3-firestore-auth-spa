@@ -71,7 +71,7 @@ const RouterService = ({ navigation }) => {
                     headerRight: () => (
                         <Menu>
                             <MenuTrigger>
-                                <IconButton icon="dots-vertical" />
+                            <Image source={require('../assets/dots.png')} style={{ width: 30, height: 30, margin: 20 }} />
                             </MenuTrigger>
                             <MenuOptions>
                                 <MenuOption onSelect={() => navigation.navigate("ServiceUpdate", { service: route.params.service })}>
